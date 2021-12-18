@@ -1,3 +1,0 @@
-// Functions
-
-console.log("Functions");
