@@ -24,7 +24,7 @@ button = document.getElementById('btn_id');
 button.addEventListener('click', click_event);
 button.addEventListener('dblclick', double_click);
 
-function click_event(event) 
+function click_event(event)
 {
     event.preventDefault();
     console.log('Button Single clicked');
@@ -45,5 +45,5 @@ button.addEventListener('mouseleave', function(event)
 {
     console.log('Button mouseleave');
     console.log(event.offsetX);
-    document.body.style.backgroundColor = `rgb(${event.offsetX}, ${event.offsetX}, 154)`;
+    // document.body.style.backgroundColor = `rgb(${event.offsetX}, ${event.offsetX}, 154)`;
 })
