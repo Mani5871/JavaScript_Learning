@@ -1,4 +1,3 @@
-console.log("Edit");
 
 let edit_div = document.getElementById("edit");
 edit_div.contentEditable = true;
@@ -12,11 +11,14 @@ document.addEventListener("click", function(event) {
 
         let array_name = "Array" + i.toString();
         let arr = edit_div.innerText
-        console.log(typeof arr);
-        arr = arr.split("\n");
+        let fruits = [];
+        Array.from(arr).forEach(function(element) {
+            element = element.replace(/^\s+|\s+$/g, '');
+            fruits.push(element);
+        });
+        console.log(fruits);
+        localStorage.setItem('Array' + i.toString(), fruits);
         i += 1;
-
-        localStorage.setItem(array_name, JSON.stringify(arr));
         
     }
 });
