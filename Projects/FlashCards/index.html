@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title> Flash Cards</title>
+    <style>
+        .form-control
+        {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-bark bg-dark">
+        <a class="navbar-brand" href="#">Flash Cards</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto"></ul>
+            
+        </div>
+    </nav>
+
+    <div class="container my-3">
+        <h1>Welcome To Flash Cards</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Add a Flash Card</h5>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class="form-label">Question</label>
+                    <textarea class="form-control" id="question" rows="3"></textarea>
+
+                    <label for="exampleFormControlTextarea1" class="form-label">Answer</label>
+                    <textarea class="form-control" id="answer" rows="3"></textarea>
+                </div>
+                <button href="#" class="btn btn-primary" id="addbtn">Add Card</b>
+            </div>
+        </div>
+        <div id="card_collection" class="row my-2 mx-2 container-fluid">
+            
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
