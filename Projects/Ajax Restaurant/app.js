@@ -58,7 +58,6 @@ function getItems(text)
                     </tr>`;
                 });
 
-                // table_body += `<tr><td>${element.food}</td><td>${element.calories}</td></tr>`;
             }
         });
         item_list.innerHTML = table_body;
