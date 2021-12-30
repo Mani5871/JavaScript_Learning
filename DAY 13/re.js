@@ -18,9 +18,6 @@ console.log(result);
 result = reg.exec(string);
 console.log(result);
 
-// do
-// {
-//     let result = reg.exec(string);
-//     console.log(result);
-// }
-// while(result != null);
+
+result = reg.test(string);
+console.log(result);
